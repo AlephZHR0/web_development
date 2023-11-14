@@ -1,0 +1,1 @@
+document.querySelectorAll("list").lastElementChild.innerHTML = "I am the last list item";
