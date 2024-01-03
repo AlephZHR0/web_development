@@ -1,11 +1,7 @@
-var drums = document.getElementsByClassName("drum")
-for (var i=0; i<drums.length; i++) {
-    drums[i].addEventListener("click", got_clicked)
+var listOfDrums = document.getElementsByClassName("drum")
+for (var i = 0; i < listOfDrums.length; i++) {
+    listOfDrums[i].addEventListener("click", function () {
+        alert("I got clicked");
+        var audio = new Audio("sounds/tom-1.mp3");
+    });
 }
-
-function got_clicked() {
-    var audio = new Audio("sounds/tom-1.mp3")
-    audio.play()
-}
-
-
